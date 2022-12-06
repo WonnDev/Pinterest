@@ -406,6 +406,7 @@
   display: none;
   position: absolute;
   width: 100%;
+  max-width: 900px;
   height: auto;
   background: white;
   box-shadow: 0 2px 2px #ccc;
