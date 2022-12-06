@@ -106,7 +106,7 @@
   display: block;
 }
 #index {
-  margin-top: 20px;
+  margin-top: 10px;
 }
 /**/
 .group-items {
@@ -317,8 +317,10 @@
   font-size: 14px;
 }
 .btn-search form:hover input {
+  background: #ccc;
+}
+.btn-search input:focus {
   border: 2px solid #0074e8;
-  background: #dddddd;
 }
 .btn-search form:hover .fa-magnifying-glass {
   color: #0074e8;
@@ -343,7 +345,7 @@
 }
 .btn-noti .noti-of-fa {
   position: absolute;
-  top: 6px;
+  top: 4px;
   right: 9px;
   border-radius: 100px;
   background: #c00;
@@ -369,6 +371,138 @@
 .another:hover .fa-angle-down {
   background: #eeeded;
 }
+.create {
+  position: relative;
+}
+.list-create {
+  position: absolute;
+  padding: 12px 10px;
+  width: 180px;
+  border-radius: 15px;
+  background-color: white;
+  box-shadow: 0 0 1px black;
+  z-index: 1;
+  top: 69px;
+  left: -30px;
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+.list-create a {
+  text-decoration: none;
+  color: #111111;
+  font-size: 15px;
+  padding: 6px;
+  display: block;
+}
+.list-create a:hover {
+  background: #ddd;
+  border-radius: 10px;
+}
+.btn-search:hover .list-find {
+  display: block;
+}
+.list-find {
+  display: none;
+  position: absolute;
+  width: 100%;
+  height: auto;
+  background: white;
+  box-shadow: 0 2px 2px #ccc;
+  z-index: 1;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  padding: 0 25px;
+  padding-bottom: 1.5rem;
+}
+/**/
+.item-list-find {
+  position: relative;
+  padding: 0 5px;
+}
+.item-list-find img {
+  width: 100%;
+  border-radius: 15px;
+  filter: brightness(0.8);
+}
+.item-list-find:hover img {
+  filter: brightness(0.6);
+}
+.text-title-img,
+.text-center {
+  position: absolute;
+  color: white;
+  font-size: 18px;
+  bottom: 3px;
+  left: 50px;
+  font-weight: 500;
+}
+.text-center {
+  bottom: 16px;
+  left: 60px;
+}
+.list-find .col {
+  padding: 0;
+}
+.list-find h5 {
+  margin-top: 2rem;
+  font-size: 18px;
+}
+.ideal img,
+.popular img {
+  height: 90px;
+}
+
+/**/
+
+/**/
+.fa-bell,
+.fa-comment-dots,
+.account,
+.another {
+  position: relative;
+}
+.fa-bell-hover,
+.fa-comment-dots-hover,
+.account-hover,
+.another-hover {
+  display: none;
+  position: absolute;
+  padding: 8px 10px;
+  background: black;
+  color: white;
+  border-radius: 5px;
+  font-size: 13px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  z-index: 1;
+  font-weight: 400;
+  text-align: center;
+}
+.fa-bell:hover .fa-bell-hover,
+.fa-comment-dots:hover .fa-comment-dots-hover,
+.account:hover .account-hover,
+.another:hover .another-hover {
+  display: block;
+}
+.fa-bell-hover {
+  bottom: -46px;
+  left: 0;
+}
+.fa-comment-dots-hover {
+  bottom: -46px;
+  right: 0;
+}
+.account-hover {
+  bottom: -72px;
+  left: 6px;
+}
+.another-hover {
+  bottom: -136px;
+  left: -12px;
+}
+/**/
+
 /*** reponsive ***/
 
 @media only screen and (max-width: 480px) {

@@ -29,25 +29,121 @@
             </div>
             <div class="btn-nav">
                 <a class="home" href="index.html">Trang chủ</a>
-                <a class="create" href="product.html">Tạo <i class="fa-solid fa-angle-down"></i></a>
+                <button class="create" href="product.html" onclick="showListCreate()">Tạo
+                    <i class="fa-solid fa-angle-down"></i>
+                    <span id="list-create" class="list-create" style="display: none;">
+                        <a href="">Tạo Ghim ý tưởng</a>
+                        <a href="">Tạo Ghim</a>
+                    </span>
+                </button>
             </div>
             <div class="btn-search">
                 <form action="" method="">
                     <input type="search" placeholder="Tìm kiếm ...">
                     <i class="fa-solid fa-magnifying-glass"></i>
                 </form>
+                <div class="list-find">
+                    <div class="row spotlight">
+                        <h5>Spotlight mua sắm</h5>
+                        <div class="col">
+                            <div class="item-list-find">
+                                <img src="img/33994d770c1af9ee0927898e59e7a8bd.jpg" alt="">
+                                <p class="text-title-img">text-img-title</p>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="item-list-find">
+                                <img src="img/33994d770c1af9ee0927898e59e7a8bd.jpg" alt="">
+                                <p class="text-title-img">text-img-title</p>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="item-list-find">
+                                <img src="img/33994d770c1af9ee0927898e59e7a8bd.jpg" alt="">
+                                <p class="text-title-img">text-img-title</p>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="item-list-find">
+                                <img src="img/33994d770c1af9ee0927898e59e7a8bd.jpg" alt="">
+                                <p class="text-title-img">text-img-title</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row ideal">
+                        <h5>Ý tưởng dành cho bạn</h5>
+                        <div class="col">
+                            <div class="item-list-find">
+                                <img src="img/2fb3c4a5142584c5f70547e770c42f16.jpg" alt="">
+                                <p class="text-center">text-center</p>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="item-list-find">
+                                <img src="img/2fb3c4a5142584c5f70547e770c42f16.jpg" alt="">
+                                <p class="text-center">text-center</p>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="item-list-find">
+                                <img src="img/2fb3c4a5142584c5f70547e770c42f16.jpg" alt="">
+                                <p class="text-center">text-center</p>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="item-list-find">
+                                <img src="img/2fb3c4a5142584c5f70547e770c42f16.jpg" alt="">
+                                <p class="text-center">text-center</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row popular">
+                        <h5>Phổ biến trên Pinterest</h5>
+                        <div class="col">
+                            <div class="item-list-find">
+                                <img src="img/2fb3c4a5142584c5f70547e770c42f16.jpg" alt="">
+                                <p class="text-center">text-center</p>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="item-list-find">
+                                <img src="img/2fb3c4a5142584c5f70547e770c42f16.jpg" alt="">
+                                <p class="text-center">text-center</p>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="item-list-find">
+                                <img src="img/2fb3c4a5142584c5f70547e770c42f16.jpg" alt="">
+                                <p class="text-center">text-center</p>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="item-list-find">
+                                <img src="img/2fb3c4a5142584c5f70547e770c42f16.jpg" alt="">
+                                <p class="text-center">text-center</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
             <div class="btn-noti">
-                <i class="fa-solid fa-bell"></i>
+                <i class="fa-solid fa-bell">
+                    <span class="fa-bell-hover">Thông báo</span>
+                </i>
+
                 <i class="fa-sharp fa-solid fa-comment-dots">
                     <span class="noti-of-fa">1</span>
+                    <span class="fa-comment-dots-hover">Tin nhắn</span>
                 </i>
+
             </div>
             <div class="account">
                 <img src="img/store1.jpg" alt="">
+                <span class="account-hover">Hồ sơ của bạn</span>
             </div>
             <div class="another">
                 <i class="fa-solid fa-angle-down"></i>
+                <span class="another-hover">Tài khoản và các tùy chọn khác</span>
             </div>
         </div>
     </section>
@@ -638,7 +734,16 @@
 
 
 
-
+    <script>
+        function showListCreate() {
+            var x = document.getElementById("list-create");
+            if (x.style.display === "none") {
+                x.style.display = "block";
+            } else {
+                x.style.display = "none";
+            }
+        }
+    </script>
 
 
 
