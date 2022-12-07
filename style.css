@@ -502,6 +502,35 @@
   bottom: -136px;
   left: -12px;
 }
+.btn-noti .bell-noti {
+  position: relative;
+}
+.btn-noti .noti {
+  position: absolute;
+  z-index: 1;
+  width: 330px;
+  height: 600px;
+  background: white;
+  box-shadow: 0 0 1px black;
+  left: -126px;
+  top: 68px;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+  display: flex;
+  flex-direction: column;
+}
+.noti h5 {
+  text-align: center;
+  padding: 1rem 0;
+  box-shadow: 0 2px 10px lightgray;
+}
+.index-item-noti {
+  display: flex;
+}
+.index-item-noti .item img {
+  width: 30%;
+}
 /**/
 
 /*** reponsive ***/
@@ -567,6 +596,30 @@
   .btn-noti .noti-of-fa {
     top: 0;
     right: 0;
+  }
+  /*search*/
+  .spotlight,
+  .ideal,
+  .popular {
+    flex-direction: column;
+  }
+  .col {
+    margin-bottom: 0.5rem;
+  }
+  .list-find {
+    overflow-y: auto;
+    max-height: 600px;
+    width: 250px;
+    left: -60px;
+  }
+  .text-title-img,
+  .text-center {
+    bottom: 0;
+    left: 10px;
+    font-size: 12px;
+  }
+  .list-find h5 {
+    padding: 0;
   }
 }
 
