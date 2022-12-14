@@ -453,7 +453,10 @@
 .popular img {
   height: 90px;
 }
-
+.create a {
+  text-decoration: none;
+  color: #000;
+}
 /**/
 
 /**/
@@ -517,8 +520,6 @@
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
   border-bottom-left-radius: 20px;
-  display: flex;
-  flex-direction: column;
 }
 .noti h5 {
   text-align: center;
@@ -528,8 +529,23 @@
 .index-item-noti {
   display: flex;
 }
-.index-item-noti .item img {
-  width: 30%;
+.index-item-noti .item-noti img {
+  width: 100%;
+}
+.title-item-noti p {
+  margin-bottom: 0;
+  font-size: 15px;
+}
+.title-item-noti span {
+  color: #666;
+  font-size: 13px;
+}
+.title-item-noti {
+  padding: 0 10px;
+}
+.item-noti {
+  margin-top: 0.5rem;
+  line-height: 1.2;
 }
 /**/
 

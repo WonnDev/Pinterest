@@ -32,8 +32,8 @@
                 <button class="create" href="product.html" onclick="showListCreate()">Tạo
                     <i class="fa-solid fa-angle-down"></i>
                     <span id="list-create" class="list-create" style="display: none;">
-                        <a href="">Tạo Ghim ý tưởng</a>
-                        <a href="">Tạo Ghim</a>
+                        <a href="product.html">Tạo Ghim ý tưởng</a>
+                        <a href="product.html">Tạo Ghim</a>
                     </span>
                 </button>
             </div>
@@ -127,26 +127,47 @@
                 </div>
             </div>
             <div class="btn-noti">
-                <div class="bell-noti">
+                <div class="bell-noti" onclick="showNoti()">
                     <i class="fa-solid fa-bell">
                         <span class="fa-bell-hover">Thông báo</span>
                     </i>
-                    <div class="noti">
+                    <div id="noti" class="noti" style="display: none;">
                         <h5>Cập nhật</h5>
-                        <div class="item-noti">
-                            <div class="title-item-noti">
-                                <p><b class="name-title-item-noti">Váy, Váy đầm dạ hội</b> và nhiều ý tưởng khác nữa mà
-                                    bạn đang tìm kiếm</p><span class="time-title-item-noti">16 giờ</span>
+                        <div class="list-noti">
+                            <div class="item-noti">
+                                <div class="title-item-noti">
+                                    <p><b class="name-title-item-noti">Váy, Váy đầm dạ hội</b> và nhiều ý tưởng khác nữa
+                                        mà
+                                        bạn đang tìm kiếm</p><span class="time-title-item-noti">16 giờ</span>
+                                </div>
+                                <div class="index-item-noti">
+                                    <div class="item-noti">
+                                        <img src="img/item-noti.jpg" alt="">
+                                    </div>
+                                    <div class="item-noti">
+                                        <img src="img/item-noti2.jpg" alt="">
+                                    </div>
+                                    <div class="item-noti">
+                                        <img src="img/item-noti3.jpg" alt="">
+                                    </div>
+                                </div>
                             </div>
-                            <div class="index-item-noti">
-                                <div class="item">
-                                    <img src="img/item-noti.jpg" alt="">
+                            <div class="item-noti">
+                                <div class="title-item-noti">
+                                    <p><b class="name-title-item-noti">Váy, Váy đầm dạ hội</b> và nhiều ý tưởng khác nữa
+                                        mà
+                                        bạn đang tìm kiếm</p><span class="time-title-item-noti">16 giờ</span>
                                 </div>
-                                <div class="item">
-                                    <img src="img/item-noti2.jpg" alt="">
-                                </div>
-                                <div class="item">
-                                    <img src="img/item-noti3.jpg" alt="">
+                                <div class="index-item-noti">
+                                    <div class="item-noti">
+                                        <img src="img/item-noti.jpg" alt="">
+                                    </div>
+                                    <div class="item-noti">
+                                        <img src="img/item-noti2.jpg" alt="">
+                                    </div>
+                                    <div class="item-noti">
+                                        <img src="img/item-noti3.jpg" alt="">
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -758,6 +779,14 @@
     <script>
         function showListCreate() {
             var x = document.getElementById("list-create");
+            if (x.style.display === "none") {
+                x.style.display = "block";
+            } else {
+                x.style.display = "none";
+            }
+        }
+        function showNoti() {
+            var x = document.getElementById("noti");
             if (x.style.display === "none") {
                 x.style.display = "block";
             } else {
